@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Ecológica Las Araucarias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="plantilla.css">
+</head>
+<body class="contenedor_principal">
+    <nav class="main-nav">
+        <div class="toggle-menu" id="toggle-menu">
+        <label for="toggle-menu-checkbox">
+            <i class="fa-solid fa-bars" style="color: azure;"></i>
+        </label>    
+        </div>
+    <input 
+    type="checkbox" 
+    class="toggle-menu__checkbox"
+    id="toggle-menu-checkbox" >
+    
+
+        <ul class="main-menu" id="main-menu">
+            <li><a href="index.html" class="home">INICIO</a></li>
+            <li><a href="nosotros.html" class="nosotros">NOSOTROS</a></li>
+            <li><a href="actividades.html" class="actividades">ACTIVIDADES</a></li>
+            <li><a href="reservar.html" class="reservar">RESERVAR</a></li>
+            <li><a href="contacto.html" class="contacto">CONTACTO</a></li>
+            
+        </ul>
+        
+        <i class="fas fa-shopping-cart carrito-icon"></i>
+    </nav>
+    <header class="contenedor_header">
+        <!-- ----- -->
+        <div class="Api-contenedor"><p class="estilo-temp-titulo">Clima actual</p><div id="clima-container"></div></div>
+        <!-- ----- -->
+        <div class="titulo">
+            <h1><em>Reserva Ecológica</em></h1> <h1>Las Araucarias</h1>
+        </div>
+    </header>
+    <div class="contenedor_redes">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com"><img src="./images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com"><img src="./images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com"><img src="./images/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com"><img src="./images/youtube.png" alt="YouTube"></a></li>
+        </ul>
+        
+        
+    </div>
+
+    <!-- -------Sección de Contacto -->
+
+    <main>
+    
+
+    </main>
+    <!-- -------Final del Contenido -->
+
+    
+    <footer>
+        <div class="contacto-info">
+            <strong>Contacto</strong>
+            <p><a href="mailto:correo@example.com">correo@example.com</a></p>
+            <p><i>Este es un proyecto académico y no un sitio real</i></p>
+            <p>&copy;Todos los Derechos Reservados 2023</p>
+        </div>
+    </footer>
+    <script src="api.js"></script>
+</body>
+</html>

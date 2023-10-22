@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Ecológica Las Araucarias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="reservar.css">
+</head>
+<body class="contenedor_principal">
+    <nav class="main-nav">
+        <div class="toggle-menu" id="toggle-menu">
+        <label for="toggle-menu-checkbox">
+            <i class="fa-solid fa-bars" style="color: azure;"></i>
+        </label>    
+        </div>
+    <input 
+    type="checkbox" 
+    class="toggle-menu__checkbox"
+    id="toggle-menu-checkbox" >
+    
+
+        <ul class="main-menu" id="main-menu">
+            <li><a href="index.html" class="home">INICIO</a></li>
+            <li><a href="nosotros.html" class="nosotros">NOSOTROS</a></li>
+            <li><a href="actividades.html" class="actividades">ACTIVIDADES</a></li>
+            <li><a href="reservar.html" class="reservar">RESERVAR</a></li>
+            <li><a href="contacto.html" class="contacto">CONTACTO</a></li>
+            
+        </ul>
+        
+        <i class="fas fa-shopping-cart carrito-icon"></i>
+    </nav>
+    <header class="contenedor_header">
+        <!-- ----- -->
+        <div class="Api-contenedor"><p class="estilo-temp-titulo">Clima actual</p><div id="clima-container"></div></div>
+        <!-- ----- -->
+        <div class="titulo">
+            <h1><em>Reserva Ecológica</em></h1> <h1>Las Araucarias</h1>
+        </div>
+    </header>
+    <div class="contenedor_redes">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com"><img src="./images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com"><img src="./images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com"><img src="./images/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com"><img src="./images/youtube.png" alt="YouTube"></a></li>
+        </ul>
+        
+        
+    </div>
+    
+    <main>
+        <h2>RESERVA TUS ACTIVIDADES ONLINE</h2>
+        <hr>
+        <section class="contenedor-ticket">
+        <div class="ticket">
+            <div class="ticket-image">
+                <img src="./images/senderismo.jpg" alt="Actividad Senderismo">
+            </div>
+            <div class="ticket-info">
+                <h4>Tiquete Senderismo</h4>
+                <p class="ticket-price">AR $500</p>
+                <strong>Características: </strong>
+                <p>Para mayores de 12 años, 2 horas</p>                                  
+                <div class="ticket-quantity">
+                    <input  type="number" id="quantity" name="quantity" value="0" min="0">
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket">
+            <div class="ticket-image">
+                <img src="./images/cabalgata.jpg" alt="Actividad Cabalgata">
+            </div>
+            <div class="ticket-info">
+                <h4>Tiquete Cabalgata</h4>
+                <p class="ticket-price">AR $900</p>
+                <strong>Características: </strong>
+                <p>Para mayores de 9 años, 1 hora</p>                                  
+                <div class="ticket-quantity">
+                    <input  type="number" id="quantity" name="quantity" value="0" min="0">
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket">
+            <div class="ticket-image">
+                <img src="./images/avistamiento.jpg" alt="Actividad Avistamiento de Aves">
+            </div>
+            <div class="ticket-info">
+                <h4>Tiquete Avistamiento de Aves</h4>
+                <p class="ticket-price">AR $1000</p>
+                <strong>Características: </strong>
+                <p>Para mayores de 15 años, 2 horas</p>                                  
+                <div class="ticket-quantity">
+                    <input  type="number" id="quantity" name="quantity" value="0" min="0">
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket">
+            <div class="ticket-image">
+                <img src="./images/camping.jpg" alt="Actividad camping">
+            </div>
+            <div class="ticket-info">
+                <h4>Tiquete Camping</h4>
+                <p class="ticket-price">AR $4000</p>
+                <strong>Características: </strong>
+                <p>Para mayores de 12 años</p>                                  
+                <div class="ticket-quantity">
+                    <input  type="number" id="quantity" name="quantity" value="0" min="0">
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ticket">
+            <div class="ticket-image">
+                <img src="./images/mariposario.jpg" alt="Actividad Mariposario">
+            </div>
+            <div class="ticket-info">
+                <h4>Tiquete Mariposario</h4>
+                <p class="ticket-price">AR $4000</p>
+                <strong>Características: </strong>
+                <p>Para mayores de 12 años, 1 hora</p>                                  
+                <div class="ticket-quantity">
+                    <input  type="number" id="quantity" name="quantity" value="0" min="0">
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket">
+            <div class="ticket-image">
+                <img src="./images/alpinismo.jpg" alt="Actividad Alpinismo">
+            </div>
+            <div class="ticket-info">
+                <h4>Tiquete Alpinismo</h4>
+                <p class="ticket-price">AR $4000</p>
+                <strong>Características: </strong>
+                <p>Para mayores de 12 años, 2 horas</p>                                  
+                <div class="ticket-quantity">
+                    <input  type="number" id="quantity" name="quantity" value="0" min="0">
+                    <button class="add-to-cart">Agregar al Carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="contacto-info">
+            <strong>Contacto</strong>
+            <p><a href="mailto:correo@example.com">correo@example.com</a></p>
+            <p><i>Este es un proyecto estudiantil y no un sitio real</i></p>
+            <p>&copy;Todos los Derechos Reservados 2023</p>
+        </div>
+    </footer>
+    <script src="api.js"></script>
+</body>
+</html>

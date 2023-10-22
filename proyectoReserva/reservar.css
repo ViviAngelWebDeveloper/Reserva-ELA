@@ -1,0 +1,145 @@
+nav ul li a.reservar {
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    color: azure;
+}
+
+.contenedor-ticket{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket{
+    display: flex;
+    place-content: center;
+    background-color: #f4f4f4;
+    width: 70%;
+    max-height: fit-content;
+    margin: 0% auto 5%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 2%;
+}
+
+
+.ticket-image{
+    margin: auto 0;
+    height: auto;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+main .ticket-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+main .ticket-image:hover{
+    transform: scale(1.03);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.ticket-info{
+    padding: 20px 0px 20px 30px;
+    width: 55%;
+}
+
+.ticket-info strong{
+    font-size: 1.2rem;
+}
+
+.ticket-info h4{
+    margin-bottom: 5%;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.ticket-quantity{
+    margin-top: 5%;
+    line-height: 1.6;
+}
+.ticket-info p{
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+input {
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+button{
+    width: auto;
+    height: 35px;
+    background-color: #f15c03;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: #fda46f;
+    transform: scale(1.03);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:active{
+    background-color: #fc8d4b;
+    border: solid 2px #f15c03;
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.ticket-price{
+    color: #6e6e6e;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+
+
+@media (max-width: 1000px) {
+    .ticket{
+        width: 100%;
+}
+   
+.ticket-image{
+height: 100%;
+}
+    
+    
+  }
+  
+  @media (max-width: 650px) {
+    .ticket{
+        width: 100%;
+        flex-direction: column;
+        
+}
+
+.ticket-image{
+    width: 100%;
+}
+
+.ticket-info{
+    width: 90%;
+    margin: 15px auto;
+    padding: 0%;
+}
+    
+  }

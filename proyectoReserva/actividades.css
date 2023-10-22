@@ -1,0 +1,84 @@
+nav ul li a.actividades {
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    color: azure;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-tarjeta {
+    background-color: #f4f4f4;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 2rem auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contendor-imagen{
+    margin: 5% auto;
+}
+/* Estilos para la imagen */
+.contendor-imagen img {
+    border-radius: 6px;
+    width: 270px;
+    height: 250px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.3s;
+
+}
+
+.contendor-imagen img:hover{
+    transform: scale(1.03);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    opacity: 1; 
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Estilos para el contenido de la tarjeta */
+.contenedor-texto {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para el título */
+.contenedor-texto strong {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    
+}
+
+/* Estilos para el texto */
+.contenedor-texto p {
+    font-size: 1em;
+    color: #555;
+}
+
+.contenedor-tarjeta button{
+    background-color: #f15c03;
+    color: azure;
+    width: 50%;
+    margin: 0% auto;
+    border-radius: 6px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    border: none;
+    padding: 1% 0%;
+    font-size: 1em;
+}
+
+.contenedor-tarjeta button:hover{
+    background-color: #fda46f;
+    transform: scale(1.03);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+

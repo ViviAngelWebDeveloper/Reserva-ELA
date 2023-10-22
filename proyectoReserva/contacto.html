@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reserva Ecológica Las Araucarias</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap"
+    />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="plantilla.css" />
+    <link rel="stylesheet" href="contacto.css" />
+  </head>
+  <body class="contenedor_principal">
+    <nav class="main-nav">
+      <div class="toggle-menu" id="toggle-menu">
+      <label for="toggle-menu-checkbox">
+          <i class="fa-solid fa-bars" style="color: azure;"></i>
+      </label>    
+      </div>
+  <input 
+  type="checkbox" 
+  class="toggle-menu__checkbox"
+  id="toggle-menu-checkbox" >
+  
+
+      <ul class="main-menu" id="main-menu">
+          <li><a href="index.html" class="home">INICIO</a></li>
+          <li><a href="nosotros.html" class="nosotros">NOSOTROS</a></li>
+          <li><a href="actividades.html" class="actividades">ACTIVIDADES</a></li>
+          <li><a href="reservar.html" class="reservar">RESERVAR</a></li>
+          <li><a href="contacto.html" class="contacto">CONTACTO</a></li>
+          
+      </ul>
+      
+      <i class="fas fa-shopping-cart carrito-icon"></i>
+  </nav>
+    <header class="contenedor_header">
+      <!-- ----- -->
+      <div class="Api-contenedor"><p class="estilo-temp-titulo">Clima actual</p><div id="clima-container"></div></div>
+      <!-- ----- -->
+      <div class="titulo">
+        <h1><em>Reserva Ecológica</em></h1>
+        <h1>Las Araucarias</h1>
+      </div>
+      <hr />
+    </header>
+    <div class="contenedor_redes">
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.facebook.com"
+            ><img src="./images/facebook.png" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com"
+            ><img src="./images/twitter.png" alt="Twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com"
+            ><img src="./images/instagram.png" alt="Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com"
+            ><img src="./images/youtube.png" alt="YouTube"
+          /></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- -------Editar Contenido de la página -->
+    <main>
+      <section class="seccion-contacto">
+        <h2>CONTACTO</h2>
+        <hr />
+        <h3>¿Querés comunicarte con nosotros?</h3>
+        <br />
+
+        <form action="" id="formContacto">
+          <h4>Información personal</h4>
+          <br /><br />
+          <label for="nombre" class="form">Nombre y Apellido (*):</label>
+          <input
+            type="text"
+            class="error-input"
+            name="nombre"
+            id="nombre"
+            required
+            placeholder
+            size="60"
+            maxlength="100"
+            aria-label="Nombre y Apellido"
+          />
+          <div id="nombreError" class="error-message"></div>
+          <br /><br />
+          <label for="mail" class="form">Correo electrónico (*):</label>
+          <input
+            type="email"
+            class="error-input"
+            name="mail"
+            id="mail"
+            required
+            placeholder
+            size="60"
+            maxlength="100"
+            aria-label="Correo electrónico"
+          />
+          <div id="correoError" class="error-message"></div>
+          <br /><br />
+          <label for="tel" class="form">Teléfono (opcional):</label>
+          <input
+            type="tel"
+            name="telefono"
+            id="tel"
+            size="60"
+            maxlength="50"
+            aria-label="Teléfono"
+          />
+          <div id="telefonoError" class="error-message"></div>
+          <br /><br />
+          <label for="mensaje" class="form">Mensaje (*):</label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            cols="80"
+            rows="5"
+            required
+            placeholder=""
+            aria-label="Mensaje"
+          ></textarea>
+          <div id="mensajeError" class="error-message"></div>
+          <br /><br />
+          <input type="checkbox" name="info" id="info" value="Info" />
+          <label for="info" id="inf"
+            >Deseo recibir información sobre la reserva y sus actividades
+            <strong>(**)</strong></label
+          >
+          <br /><br />
+          <div class="enviar">
+            <input
+              type="submit"
+              name="enviar"
+              value="Enviar formulario"
+              class="boton"
+            />
+            <input type="reset" name="borrar" value="Borrar" class="boton" />
+          </div>
+        </form>
+
+        <br /><br />
+        <p>
+          <strong>(*)</strong> Campo obligatorio
+          <br />
+          <strong>(*)</strong> El titular de los datos personales tiene la
+          facultad de ejercer el derecho de acceso a los mismos en forma
+          gratuita a intervalos no inferiores a seis meses, salvo que se
+          acredite un interés legítimo al efecto conforme lo establecido en el
+          artículo 14, inciso 3 de la Ley N° 25.326. <br /><br />
+          La DIRECCIÓN NACIONAL DE PROTECCIÓN DE DATOS PERSONALES, Órgano de
+          Control de la Ley N° 25.326, tiene la atribución de atender las
+          denuncias y reclamos que se interpongan con relación al incumplimiento
+          de las normas sobre protección de datos personales.
+          <br /><br />
+          LEY 25.326 - art 27 - inciso 3ro: El titular podrá, en cualquier
+          momento, solicitar el retiro o bloqueo su nombre de los bancos de
+          datos a los que se refiere el presente artículo.
+          <br /><br />
+          DECRETO 1158/01 - ART. 27 - 3er. Párrafo. En toda comunicación con
+          fines de publicidad que se realice por correo, teléfono, correo
+          electrónico, Internet u otro medio a distancia a conocer, se deberá
+          indicar, en forma expresa y destacada, la posibilidad del titular del
+          dato de solicitar el retiro o bloqueo, total o parcial, de la base de
+          datos. A pedido del interesado, se deberá informar el nombre del
+          responsable o usuario del banco de datos que proveyó la información.
+        </p>
+      </section>
+      <section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26271.166049842286!2d-58.38859079913889!3d-34.60679741902636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3351f97fbdf97%3A0xbaf9aec5f3fc9dc6!2sPuerto%20Madero%2C%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sus!4v1696694534175!5m2!1ses-419!2sus"
+          width="100%"
+          height="300px"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="Ubicacion fictiticia para la Reserva Ecologica las Araucarias"
+        ></iframe>
+      </section>
+    </main>
+    <!-- -------Final del Contenido -->
+
+    <footer>
+      <div class="contacto-info">
+        <strong>Contacto</strong>
+        <p><a href="mailto:correo@example.com">correo@example.com</a></p>
+        <p><i>Este es un proyecto académico y no un sitio real</i></p>
+        <p>&copy;Todos los Derechos Reservados 2023</p>
+      </div>
+    </footer>
+
+    <script>
+      const formulario = document.getElementById("formContacto");
+
+      formulario.addEventListener("submit", function (event) {
+        if (!validarFormulario()) {
+          event.preventDefault(); // Evita que se envíe el formulario si no es válido.
+        }
+      });
+
+      function validarFormulario() {
+        const nombre = document.getElementById("nombre");
+        const correo = document.getElementById("mail");
+        const telefono = document.getElementById("tel");
+        const mensaje = document.getElementById("mensaje");
+        const nombreError = document.getElementById("nombreError");
+        const correoError = document.getElementById("correoError");
+        const telefonoError = document.getElementById("telefonoError");
+        const mensajeError = document.getElementById("mensajeError");
+
+        let isValid = true;
+
+        if (nombre.value.trim() === "") {
+          nombreError.textContent =
+            "El campo 'Nombre y Apellido' es obligatorio.";
+          nombre.classList.add("error-input");
+          isValid = false;
+        }
+
+        if (/[\d]/.test(nombre.value)) {
+          nombreError.textContent =
+            "El campo 'Nombre y Apellido' no debe contener números";
+          nombre.classList.add("error-input");
+          isValid = false;
+        }
+
+        if (correo.value.trim() === "") {
+          correoError.textContent =
+            "El campo 'Correo electrónico' debe ser válido";
+          correo.focus();
+          isValid = false;
+        }
+
+        if (telefono.value.trim() !== "") {
+          if (!/^[0-9]*$/.test(telefono.value)) {
+            telefonoError.textContent =
+              "El campo 'Teléfono' solo debe contener números";
+            telefono.focus();
+            isValid = false;
+          }
+        }
+
+        if (mensaje.value.trim() === "") {
+          mensajeError.textContent = "El campo 'Mensaje' es obligatorio";
+          mensaje.focus();
+          isValid = false;
+        }
+
+        return isValid;
+      }
+    </script>
+    <script src="api.js"></script>
+  </body>
+</html>

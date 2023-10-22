@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Ecológica Las Araucarias</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="plantilla.css">
+    <link rel="stylesheet" href="index.css">
+    
+    
+</head>
+<body class="contenedor_principal">
+    <nav class="main-nav">
+        <div class="toggle-menu" id="toggle-menu">
+        <label for="toggle-menu-checkbox">
+            <i class="fa-solid fa-bars" style="color: azure;"></i>
+        </label>    
+        </div>
+    <input 
+    type="checkbox" 
+    class="toggle-menu__checkbox"
+    id="toggle-menu-checkbox" >
+    
+
+        <ul class="main-menu" id="main-menu">
+            <li><a href="index.html" class="home">INICIO</a></li>
+            <li><a href="nosotros.html" class="nosotros">NOSOTROS</a></li>
+            <li><a href="actividades.html" class="actividades">ACTIVIDADES</a></li>
+            <li><a href="reservar.html" class="reservar">RESERVAR</a></li>
+            <li><a href="contacto.html" class="contacto">CONTACTO</a></li>
+            
+        </ul>
+        
+        <i class="fas fa-shopping-cart carrito-icon"></i>
+    </nav>
+    <header class="contenedor_header">
+        <!-- ----- -->
+        <div class="Api-contenedor"><p class="estilo-temp-titulo">Clima actual</p><div id="clima-container"></div></div>
+        <!-- ----- -->
+        <div class="titulo">
+            <h1><em>Reserva Ecológica</em></h1> <h1>Las Araucarias</h1>
+        </div>
+    </header>
+    <div class="contenedor_redes">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com"><img src="./images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com"><img src="./images/twitter.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com"><img src="./images/instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://www.youtube.com"><img src="./images/youtube.png" alt="YouTube"></a></li>
+        </ul>
+        
+    </div>
+
+    <!-- -------Editar Contenido de la página -->
+    <main>
+        <h2>BIENVENIDOS</h2>
+        <!-- Espacio con línea separadora -->
+        <hr>
+
+        <!-- Slider de imágenes -->
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    
+                    <img id="slider1" src="images/1.jpg" alt="">
+                    <img id="slider2" src="images/2.jpg" alt="">
+                    <img id="slider3" src="images/3.jpg" alt="">
+                
+
+                <!-- Botones inferiores (. . .) -->
+                <div class="sliderDots">
+                    <a href="#slider1"></a>
+                    <a href="#slider2"></a>
+                    <a href="#slider3"></a>
+                </div>
+                </div>
+            </div>
+
+        </section>
+       
+        <!-- Espacio con línea separadora -->
+       <hr>
+        <!-- Descripción breve -->
+
+        <em>La reserva ecológica Las Araucarias, cuenta con 80 hectáreas de paisajes naturales en el que habitan más de 1.000 especies animales y vegetales autóctonos de Argentina.</em>
+
+       <hr>
+
+       <!-- Slider automático que ocupa todo el ancho del viewport, solo con fines decorativos -->
+        <div class="contenedor_ancho">
+            <div class="slider_ancho">
+                <div class="frase1_A">
+                    <p>Sé parte de la<p>
+                </div>
+                <div class="frase1_B">
+                    <p>Naturaleza<p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Espacio con línea separadora -->
+        <hr>
+        <!-- Botones con imágenes -->
+        <div class="menu-imagenes">
+            <div class="lugares">
+                <div class="texto">
+                    <p>Lugares</p>
+                </div>
+            </div>
+            <div class="fauna">
+                <div class="texto">
+                    <p>Fauna</p>
+                </div>
+            </div>
+            <div class="flora">
+                <div class="texto">
+                    <p>Flora</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Espacio con línea separadora -->
+       <hr>
+       
+       <!-- Descripción breve -->
+
+       <p class="reserva"><em >Únete a nosotros para una experiencia natural única. Avistamiento de aves, mariposario, senderismo, cabalgatas y más. </em> <strong class="reserva">¡Reserva tus tickets ahora y explora la belleza de la naturaleza con nosotros! <br><a href="reservar.html">Click aquí</a></strong></p>
+
+      <hr>
+
+    </main>
+    <!-- -------Final del Contenido -->
+
+    
+    <footer>
+        <div class="contacto-info">
+            <strong>Contacto</strong>
+            <p><a href="mailto:correo@example.com">correo@example.com</a></p>
+            <p><i>Este es un proyecto académico y no un sitio real</i></p>
+            <p>&copy;Todos los Derechos Reservados 2023</p>
+        </div>
+    </footer>
+
+    <script src="api.js"></script>
+</body>
+</html>
